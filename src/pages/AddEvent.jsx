@@ -24,17 +24,29 @@ function AddEvent() {
         <h1 className="font-bold text-xl mr-1">Event Name</h1>
         <p>(Venue Details)</p>
       </div>
-      <div className="flex p-2 gap-x-4 border border-pink-300 text-pink-300 rounded-lg w-8/12">
-        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>
+      <div className="flex p-2 md:gap-x-4 border border-pink-300 text-pink-300 rounded-lg md:w-8/12 w-full">
+        <h1
+          className="text-pink-300 md:text-base text-xs"
+          style={{ textShadow: "0 0 10px pink" }}
+        >
           Event Details
         </h1>
-        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>
+        <h1
+          className="text-pink-300 md:text-base text-xs"
+          style={{ textShadow: "0 0 10px pink" }}
+        >
           Assign Coordinator/Coordinator
         </h1>
-        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>
+        <h1
+          className="text-pink-300 md:text-base text-xs"
+          style={{ textShadow: "0 0 10px pink" }}
+        >
           Session Management
         </h1>
-        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>
+        <h1
+          className="text-pink-300 md:text-base text-xs"
+          style={{ textShadow: "0 0 10px pink" }}
+        >
           Generate SOW
         </h1>
       </div>
@@ -59,7 +71,7 @@ function AddEvent() {
             <h1 className="font-semibold mr-1">Event Name</h1>
             <p>(Venue Here)</p>
           </div>
-          <div className="border border-pink-300 flex gap-x-24 rounded-md p-1 mt-2">
+          <div className="border border-pink-300 flex md:gap-x-24 rounded-md p-1 mt-2">
             <h1>Start: 12-12-2023</h1>
             <h1>Ends: 15-12-2023</h1>
           </div>
@@ -68,8 +80,8 @@ function AddEvent() {
           </div>
         </div>
       </div>
-      <div className="flex gap-x-2">
-        <div className="w-1/3">
+      <div className="md:flex gap-x-2">
+        <div className="md:w-1/3 w-full">
           <h1 className="font-semibold ml-2">Assign Contractor</h1>
           <div className="bg-black p-2 rounded-lg">
             <div className="bg-pink-400 rounded-lg flex flex-col p-2 mb-2">
@@ -124,10 +136,10 @@ function AddEvent() {
             </div>
           </div>
         </div>
-        <div className="w-2/3 mt-6">
+        <div className="md:w-2/3 w-full mt-6">
           <h1 className="font-semibold">Positions</h1>
           <div className="bg-black rounded-t-lg p-1">
-            <div className="flex gap-x-20 mt-2 mb-2">
+            <div className="flex md:gap-x-20 gap-x-8 mt-2 mb-2">
               <h1>Position</h1>
               <h1 className="md:ml-7">Time</h1>
               <h1>Info</h1>
@@ -135,14 +147,14 @@ function AddEvent() {
             </div>
             <hr />
             <div className="flex justify-between items-center mt-1 mb-1">
-              <h1>Camera 1(Video)</h1>
-              <h1>9 am - 7 pm</h1>
-              <h1>LP Default</h1>
-              <h1>20</h1>
+              <h1 className="md:text-base text-xs">Camera 1(Video)</h1>
+              <h1 className="md:text-base text-xs">9 am - 7 pm</h1>
+              <h1 className="md:text-base text-xs">LP Default</h1>
+              <h1 className="md:text-base text-xs">20</h1>
               <select
                 value={selectedCoordinator}
                 onChange={handleSelectChange}
-                className="w- p-2 border rounded text-black"
+                className="p-2 px-2 border rounded-sm text-sm text-black"
               >
                 <option value="">Search Coordinator</option>
                 {coordinators.map((coordinator, index) => (
@@ -154,14 +166,14 @@ function AddEvent() {
             </div>
             <hr />
             <div className="flex justify-between items-center mt-1 mb-1">
-              <h1>Camera 1(Video)</h1>
-              <h1>9 am - 7 pm</h1>
-              <h1>LP Default</h1>
-              <h1>20</h1>
+              <h1 className="md:text-base text-xs">Camera 1(Video)</h1>
+              <h1 className="md:text-base text-xs">9 am - 7 pm</h1>
+              <h1 className="md:text-base text-xs">LP Default</h1>
+              <h1 className="md:text-base text-xs">20</h1>
               <select
                 value={selectedCoordinator}
                 onChange={handleSelectChange}
-                className="w- p-2 border rounded text-black"
+                className="p-2 px-2 border rounded-sm text-sm text-black"
               >
                 <option value="">Search Coordinator</option>
                 {coordinators.map((coordinator, index) => (
@@ -173,14 +185,14 @@ function AddEvent() {
             </div>
             <hr />
             <div className="flex justify-between items-center mt-1 mb-1">
-              <h1>Camera 1(Video)</h1>
-              <h1>9 am - 7 pm</h1>
-              <h1>LP Default</h1>
-              <h1>20</h1>
+              <h1 className="md:text-base text-xs">Camera 1(Video)</h1>
+              <h1 className="md:text-base text-xs">9 am - 7 pm</h1>
+              <h1 className="md:text-base text-xs">LP Default</h1>
+              <h1 className="md:text-base text-xs">20</h1>
               <select
                 value={selectedCoordinator}
                 onChange={handleSelectChange}
-                className="w- p-2 border rounded text-black"
+                className="p-2 px-2 border rounded-sm text-sm text-black"
               >
                 <option value="">Search Coordinator</option>
                 {coordinators.map((coordinator, index) => (
@@ -192,14 +204,14 @@ function AddEvent() {
             </div>
             <hr />
             <div className="flex justify-between items-center mt-1 mb-1">
-              <h1>Camera 1(Video)</h1>
-              <h1>9 am - 7 pm</h1>
-              <h1>LP Default</h1>
-              <h1>20</h1>
+              <h1 className="md:text-base text-xs">Camera 1(Video)</h1>
+              <h1 className="md:text-base text-xs">9 am - 7 pm</h1>
+              <h1 className="md:text-base text-xs">LP Default</h1>
+              <h1 className="md:text-base text-xs">20</h1>
               <select
                 value={selectedCoordinator}
                 onChange={handleSelectChange}
-                className="w- p-2 border rounded text-black"
+                className="p-2 px-2 border rounded-sm text-sm text-black"
               >
                 <option value="">Search Coordinator</option>
                 {coordinators.map((coordinator, index) => (
@@ -211,14 +223,14 @@ function AddEvent() {
             </div>
             <hr />
             <div className="flex justify-between items-center mt-1 mb-1">
-              <h1>Camera 1(Video)</h1>
-              <h1>9 am - 7 pm</h1>
-              <h1>LP Default</h1>
-              <h1>20</h1>
+              <h1 className="md:text-base text-xs">Camera 1(Video)</h1>
+              <h1 className="md:text-base text-xs">9 am - 7 pm</h1>
+              <h1 className="md:text-base text-xs">LP Default</h1>
+              <h1 className="md:text-base text-xs">20</h1>
               <select
                 value={selectedCoordinator}
                 onChange={handleSelectChange}
-                className="w- p-2 border rounded text-black"
+                className="p-2 px-2 border rounded-sm text-sm text-black"
               >
                 <option value="">Search Coordinator</option>
                 {coordinators.map((coordinator, index) => (

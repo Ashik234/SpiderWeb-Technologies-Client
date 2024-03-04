@@ -1,15 +1,20 @@
 import React from "react";
 import Report from "/report.svg";
 import Notification from "/notifications.svg";
+import { motion } from "framer-motion";
 function NavBar() {
   return (
-    <div className="flex justify-center items-start gap-x-3 mt-8 mb-4">
+    <motion.div
+    animate={{ opacity: 1, y: 0 }}
+    initial={{ opacity: 0, y: -100 }}
+    transition={{ ease: "easeOut", duration: 1 }}
+    className="flex justify-center items-start gap-x-3 mt-8 mb-4">
       <img className="mt-1" src={Report} alt="" />
       <img className="mt-1" src={Notification} alt="" />
       <div className="flex gap-x-2">
         <div className="flex flex-col text-white">
           <h1>
-            Hi, <span className="text-cyan-500">Muhammed Azad</span>
+            Hi, <span className="text-cyan-500">Muhammed Asad</span>
           </h1>
           <p>Welcome Back!</p>{" "}
         </div>
@@ -21,7 +26,7 @@ function NavBar() {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

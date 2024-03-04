@@ -10,20 +10,20 @@ import { Link } from "react-router-dom";
 
 const options = [
   {
-    value: "Burns Bay Road",
+    value: "Filled Name",
   },
   {
-    value: "Downing Street",
+    value: "Muhammed Asad",
   },
   {
-    value: "Wall Street",
+    value: "Loren Ipsum",
   },
 ];
 
 function DashBoard() {
   return (
     <div
-      className="rounded-xl text-white border-pink-300 border-2"
+      className="rounded-xl text-white border-pink-300 border-2 mb-3"
       style={{
         background: "linear-gradient(to bottom, indigo, black)",
       }}
@@ -48,52 +48,175 @@ function DashBoard() {
           </Link>
         </div>
       </div>
-      <div
-        style={{ backgroundColor: "#D175B6" }}
-        className="flex p-2 justify-around"
-      >
-        <div className="flex justify-between">
-          <h1>Event Name</h1>
-          <div className="bg-white rounded-full ml-1">
-            <img src={Arrow} alt="" />
+      
+      <div style={{ overflowX: "auto" }}>
+        <div
+          style={{ backgroundColor: "#D175B6" }}
+          className="flex p-2 gap-x-10"
+        >
+          <div className="flex justify-between">
+            <h1 style={{ whiteSpace: "nowrap" }}>Event Name</h1>
+            <div className="bg-white rounded-full md:ml-1">
+              <img src={Arrow} alt="" />
+            </div>
           </div>
-        </div>
-        <h1>Event Start</h1>
-        <div className="flex justify-between">
-          <h1>Event End</h1>
-          <div className="bg-white rounded-full ml-1">
-            <img src={Arrow} alt="" />
+          <h1 style={{ whiteSpace: "nowrap" }}>Event Start</h1>
+          <div className="flex justify-between">
+            <h1 style={{ whiteSpace: "nowrap" }}>Event End</h1>
+            <div className="bg-white rounded-full md:ml-1">
+              <img src={Arrow} alt="" />
+            </div>
           </div>
-        </div>
-        <div className="flex justify-between">
-          <h1>Client Name</h1>
-          <div className="bg-white rounded-full ml-1">
-            <img src={Arrow} alt="" />
+          <div className="flex justify-between">
+            <h1 style={{ whiteSpace: "nowrap" }}>Client Name</h1>
+            <div className="bg-white rounded-full md:ml-1">
+              <img src={Arrow} alt="" />
+            </div>
           </div>
+          <h1 style={{ whiteSpace: "nowrap" }}>Contact Info</h1>
+          <h1 style={{ whiteSpace: "nowrap" }}>Venue</h1>
+          <h1 style={{ whiteSpace: "nowrap" }}>City</h1>
+          <h1 style={{ whiteSpace: "nowrap" }}>State</h1>
+          <h1 style={{ whiteSpace: "nowrap" }}>Zip Code</h1>
         </div>
-        <h1>Contact Info</h1>
-        <h1>Venue</h1>
-        <h1>City</h1>
-        <h1>State</h1>
-        <h1>Zip Code</h1>
+        <div className="flex flex-col">
+          <div className="flex gap-x-6 items-center">
+            <div className="flex p-2 mx-2 gap-x-2">
+              <img src={Eye} alt="" />
+              <h1 style={{ whiteSpace: "nowrap" }}>Filled Name</h1>
+            </div>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Muhammed Asad</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>+91 2323312121</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Loren Ipsum High Tower</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+          </div>
+          <hr />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex gap-x-6 items-center">
+            <div className="flex p-2 mx-2 gap-x-2">
+              <img src={Eye} alt="" />
+              <h1 style={{ whiteSpace: "nowrap" }}>Filled Name</h1>
+            </div>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Muhammed Asad</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>+91 2323312121</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Loren Ipsum High Tower</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+          </div>
+          <hr />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex gap-x-6 items-center">
+            <div className="flex p-2 mx-2 gap-x-2 ">
+              <img src={Eye} alt="" />
+              <h1 style={{ whiteSpace: "nowrap" }}>Filled Name</h1>
+            </div>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Muhammed Asad</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>+91 2323312121</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Loren Ipsum High Tower</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+          </div>
+          <hr />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex gap-x-6 items-center">
+            <div className="flex p-2 mx-2 gap-x-2 ">
+              <img src={Eye} alt="" />
+              <h1 style={{ whiteSpace: "nowrap" }}>Filled Name</h1>
+            </div>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Muhammed Asad</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>+91 2323312121</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Loren Ipsum High Tower</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+          </div>
+          <hr />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex gap-x-6 items-center">
+            <div className="flex p-2 mx-2 gap-x-2">
+              <img src={Eye} alt="" />
+              <h1 style={{ whiteSpace: "nowrap" }}>Filled Name</h1>
+            </div>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Muhammed Asad</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>+91 2323312121</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Loren Ipsum High Tower</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+          </div>
+          <hr />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex gap-x-6 items-center">
+            <div className="flex p-2 mx-2 gap-x-2">
+              <img src={Eye} alt="" />
+              <h1 style={{ whiteSpace: "nowrap" }}>Filled Name</h1>
+            </div>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Muhammed Asad</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>+91 2323312121</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Loren Ipsum High Tower</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+          </div>
+          <hr />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex gap-x-6 items-center">
+            <div className="flex p-2 mx-2 gap-x-2">
+              <img src={Eye} alt="" />
+              <h1 style={{ whiteSpace: "nowrap" }}>Filled Name</h1>
+            </div>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Muhammed Asad</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>+91 2323312121</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Loren Ipsum High Tower</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+          </div>
+          <hr />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex gap-x-6 items-center">
+            <div className="flex p-2 mx-2 gap-x-2">
+              <img src={Eye} alt="" />
+              <h1 style={{ whiteSpace: "nowrap" }}>Filled Name</h1>
+            </div>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Muhammed Asad</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>+91 2323312121</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Loren Ipsum High Tower</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+          </div>
+          <hr />
+        </div>
       </div>
-      <div className="flex flex-col">
-        <div className="flex gap-x-6 items-center">
-          <div className="flex p-2 mx-2 gap-x-2">
-            <img src={Eye} alt="" />
-            <h1>Filled Name</h1>
-          </div>
-          <h1>Jan 12, 2024</h1>
-          <h1>Jan 12, 2024</h1>
-          <h1>Muhammed Asad</h1>
-          <h1>+91 2323312121</h1>
-          <h1>Loren Ipsum High Tower</h1>
-          <h1>-</h1>
-          <h1>-</h1>
-          <h1>-</h1>
-        </div>
-        <hr />
-      </div>
+
       <div className="bg-black rounded-xl p-2">
         <div className="flex justify-center gap-x-4">
           <img src={ArrowBack} alt="" />
