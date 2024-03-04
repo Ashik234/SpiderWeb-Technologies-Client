@@ -30,6 +30,7 @@ function SideBar() {
             <div className="flex flex-col w-full py-3">
               <div className="hover:bg-violet-900 rounded-md flex justify-between p-2">
                 <h1 className="cursor-pointer ml-6 text-pink-300" style={{ textShadow: "0 0 10px pink" }}>Events</h1>
+
                 <motion.img
                   onClick={toggleEvents}
                   animate={{ rotate: EventsVisible ? -180 : 0 }}
@@ -51,6 +52,7 @@ function SideBar() {
   <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>Estimate</h1>
   <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>Events</h1>
   <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>Partial Requests</h1>
+
                 </motion.div>
               )}
             </div>
