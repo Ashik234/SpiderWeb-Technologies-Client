@@ -24,8 +24,7 @@ function SideBar() {
       >
         <div
           style={{ backgroundColor: "#070b18" }}
-          className="text-white w-56 h-screen rounded-lg lg:flex justify-between hidden flex-col px-1 ml-8 border-pink-300 border-2"
-
+          className="text-white w-56 h-full rounded-lg lg:flex justify-between hidden flex-col px-1 ml-6 border-pink-300 border-2"
         >
           <div className="flex flex-col items-center">
             <div className="flex flex-col w-full py-3">
