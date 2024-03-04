@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Star from "/Star 2.svg";
 import ArrowBack from "/arrow-left-02.svg";
 import ArrowForward from "/arrow-right-02.svg";
-import FilledRound from "/Ellipse 3.svg"
-import Round from "/Ellipse 4.svg"
+import FilledRound from "/Ellipse 3.svg";
+import Round from "/Ellipse 4.svg";
 function AddEvent() {
   const [selectedCoordinator, setSelectedCoordinator] = useState("");
 
@@ -25,10 +25,18 @@ function AddEvent() {
         <p>(Venue Details)</p>
       </div>
       <div className="flex p-2 gap-x-4 border border-pink-300 text-pink-300 rounded-lg w-8/12">
-        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }} >Event Details</h1>
-        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>Assign Coordinator/Coordinator</h1>
-        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>Session Management</h1>
-        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>Generate SOW</h1>
+        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>
+          Event Details
+        </h1>
+        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>
+          Assign Coordinator/Coordinator
+        </h1>
+        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>
+          Session Management
+        </h1>
+        <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>
+          Generate SOW
+        </h1>
       </div>
       <div className="flex mt-2 p-2 gap-x-2">
         <div className="w-1/2">
@@ -221,23 +229,25 @@ function AddEvent() {
               </select>
             </div>
             <hr />
-            
-
           </div>
 
           <div className="bg-black rounded-b-xl p-2">
-        <div className="flex justify-center gap-x-4">
-          <img src={ArrowBack} alt="" />
-          <img src={Round} alt="" />
-          <img src={FilledRound} alt="" />
-          <img src={ArrowForward} alt="" />
-        </div>
-      </div>
+            <div className="flex justify-center gap-x-4">
+              <img src={ArrowBack} alt="" />
+              <img src={Round} alt="" />
+              <img src={FilledRound} alt="" />
+              <img src={ArrowForward} alt="" />
+            </div>
+          </div>
 
-      <button className="bg-pink-500 rounded-lg p-2 mt-4 px-8" style={{ boxShadow: "0 0 5px pink" }}>Save Edits</button>
+          <button
+            className="bg-pink-500 rounded-lg p-2 mt-4 px-8"
+            style={{ boxShadow: "0 0 5px pink" }}
+          >
+            Save Edits
+          </button>
         </div>
       </div>
-      
     </div>
   );
 }
