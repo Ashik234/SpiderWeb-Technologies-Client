@@ -4,8 +4,8 @@ import { SearchOutlined } from "@ant-design/icons";
 import Add from "/add-01.svg";
 import Eye from "/eye.svg";
 import Arrow from "/arrow_drop_down.svg";
-import ArrowBack from "/arrow_back.svg";
-import ArrowForward from "/arrow_forward.svg";
+import ArrowBack from "/arrow-left-02.svg";
+import ArrowForward from "/arrow-right-02.svg";
 import { Link } from "react-router-dom";
 
 const options = [
@@ -42,16 +42,14 @@ function DashBoard() {
             <Input prefix={<SearchOutlined />} placeholder="Search here" />
           </AutoComplete>
           <Link to="/add">
-          <div
-            className="ml-2 bg-pink-500 flex justify-center items-center rounded-sm my-1"
-          >
-            <img src={Add} alt="" />
-          </div>
+            <div className="ml-2 bg-pink-500 flex justify-center items-center rounded-sm my-1">
+              <img src={Add} alt="" />
+            </div>
           </Link>
         </div>
       </div>
       <div
-        style={{ backgroundColor: "#D175B6"}}
+        style={{ backgroundColor: "#D175B6" }}
         className="flex p-2 justify-around"
       >
         <div className="flex justify-between">
@@ -79,7 +77,7 @@ function DashBoard() {
         <h1>State</h1>
         <h1>Zip Code</h1>
       </div>
-      <div className="flex flex-col" >
+      <div className="flex flex-col">
         <div className="flex gap-x-6 items-center">
           <div className="flex p-2 mx-2 gap-x-2">
             <img src={Eye} alt="" />

@@ -1,20 +1,21 @@
 import React from 'react'
 import { Outlet } from "react-router-dom";
 import NavBar from '../components/NavBar';
+import SideBar from '../components/SideBar';
 
 function Layout() {
   return (
-    <div className="flex min-h-screen bg-violet-500">
-      {/* <div className="fixed h-full">
-        <SideBar />
-      </div> */}
-      <div className="flex flex-col flex-grow">
-        <NavBar />
-        <div className="flex-grow mt-4">
-          <Outlet />
-        </div>
+    <div className="flex flex-col " style={{
+      background: "linear-gradient(to bottom, indigo, black)",
+    }}>
+    <NavBar />
+    <div className='flex gap-x-4'>
+      <SideBar/>
+      <div className='w-full'>
+        <Outlet/>
       </div>
     </div>
+  </div>
   )
 }
 
