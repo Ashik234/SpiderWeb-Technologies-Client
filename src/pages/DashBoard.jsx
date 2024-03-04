@@ -231,7 +231,25 @@ function DashBoard() {
             <h1>-</h1>
           </div>
           <hr />
-        </div><div className="flex flex-col">
+        </div>
+        <div className="flex flex-col">
+          <div className="flex gap-x-6 items-center">
+            <div className="flex p-2 mx-2 gap-x-2">
+              <img src={Eye} alt="" />
+              <h1 style={{ whiteSpace: "nowrap" }}>Filled Name</h1>
+            </div>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Jan 12, 2024</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Muhammed Asad</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>+91 2323312121</h1>
+            <h1 style={{ whiteSpace: "nowrap" }}>Loren Ipsum High Tower</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+            <h1>-</h1>
+          </div>
+          <hr />
+        </div>
+        <div className="flex flex-col">
           <div className="flex gap-x-6 items-center">
             <div className="flex p-2 mx-2 gap-x-2">
               <img src={Eye} alt="" />
