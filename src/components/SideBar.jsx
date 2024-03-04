@@ -24,12 +24,14 @@ function SideBar() {
       >
         <div
           style={{ backgroundColor: "#070b18" }}
-          className="text-white w-56 h-screen rounded-lg md:flex hidden flex-col px-1 ml-8 border-pink-300 border-2"
+          className="text-white w-56 h-screen rounded-lg lg:flex justify-between hidden flex-col px-1 ml-8 border-pink-300 border-2"
+
         >
           <div className="flex flex-col items-center">
             <div className="flex flex-col w-full py-3">
               <div className="hover:bg-violet-900 rounded-md flex justify-between p-2">
-                <h1 className="cursor-pointer ml-6">Events</h1>
+                <h1 className="cursor-pointer ml-6 text-pink-300" style={{ textShadow: "0 0 10px pink" }}>Events</h1>
+
                 <motion.img
                   onClick={toggleEvents}
                   animate={{ rotate: EventsVisible ? -180 : 0 }}
@@ -47,10 +49,11 @@ function SideBar() {
                   v
                   className="flex flex-col gap-y-4 ml-12 mt-4 "
                 >
-                  <h1>New Requests</h1>
-                  <h1>Estimate</h1>
-                  <h1>Events</h1>
-                  <h1>Partial Requests</h1>
+                   <h1 className="text-pink-300" style={{ textShadow: "0 0 10px pink" }}>New Requests</h1>
+  <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>Estimate</h1>
+  <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>Events</h1>
+  <h1 className="text-pink-300 " style={{ textShadow: "0 0 10px pink" }}>Partial Requests</h1>
+
                 </motion.div>
               )}
             </div>

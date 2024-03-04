@@ -5,15 +5,17 @@ import SideBar from '../components/SideBar';
 
 function Layout() {
   return (
-    <div className="flex min-h-screen flex-col bg-violet-500">
-      <NavBar />
-      <div className="flex flex-grow">
-        <Outlet />
-        <div className="fixed h-full">
-          <SideBar />
-        </div>
+    <div className="flex flex-col " style={{
+      background: "linear-gradient(to bottom, indigo, black)",
+    }}>
+    <NavBar />
+    <div className='flex gap-x-4'>
+      <SideBar/>
+      <div className='w-full'>
+        <Outlet/>
       </div>
     </div>
+  </div>
   )
 }
 
